@@ -1,0 +1,10 @@
+<form method="post" action="/recipes">
+  <label <% if !list.blank? %>
+    <% for item in  %>
+      
+    <% end %>
+  <% else %>
+    
+  <% end %>
+  >Name:</label><br>
+  <input type="text" name="name" id="recipe_name" />
